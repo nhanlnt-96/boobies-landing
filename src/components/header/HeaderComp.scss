@@ -1,0 +1,72 @@
+@import "../../styles/rwd";
+
+.header-comp {
+  &-container {
+    @include mobile {
+      width: 100%;
+    }
+    @include desktop {
+      padding: 10px;
+      border: 5px solid #000;
+      border-radius: 15px;
+      background-color: #77838d;
+    }
+    @include wide-desktop {
+      padding: 10px;
+      border: 5px solid #000;
+      border-radius: 15px;
+      background-color: #77838d;
+    }
+  }
+}
+
+.header-comp-menu {
+  .menu-item {
+    color: #ffffff !important;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    transition: .5s;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+      @include mobile {
+        margin-left: unset;
+      }
+      @include tablet {
+        margin-left: unset;
+      }
+    }
+
+    &:hover {
+      color: #000000 !important;
+      border-radius: 10px;
+      transform: scale(1);
+      background-color: #ffffff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @include mobile {
+      text-align: center;
+      color: #000000 !important;
+      &:hover {
+        color: #ffffff !important;
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.toggle-btn-container {
+  .header-comp-toggle-custom {
+    border: none !important;
+    color: unset !important;
+    box-shadow: unset !important;
+  }
+
+  @include mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
