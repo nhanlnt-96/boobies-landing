@@ -1,0 +1,83 @@
+@import "../../styles/rwd";
+
+.faq-comp-content {
+  margin-top: 24px !important;
+  min-height: calc(100vh - 48px - 24px - 100px);
+}
+
+.faq-comp-content .item {
+  &-container {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+      @include mobile {
+        margin-bottom: 12px;
+      }
+      @include tablet {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &-detail {
+    width: 50%;
+    @include mobile {
+      width: 100%;
+      padding: unset;
+    }
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &-question {
+    img {
+      transform: scaleX(-1) rotate(0deg);
+    }
+
+    .question {
+      z-index: 1;
+      font-size: 19px;
+      font-weight: bold;
+      color: #ffffff;
+      @include mobile {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &-answer {
+    margin-top: 12px;
+
+    .answer {
+      font-size: 20px;
+      z-index: 1;
+      @include mobile {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &-question, &-answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    min-height: 150px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      position: absolute;
+    }
+
+    @include mobile {
+      padding: 10px;
+      min-height: 100px;
+    }
+  }
+}

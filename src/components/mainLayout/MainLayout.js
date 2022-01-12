@@ -4,6 +4,10 @@ import BannerComp from "../banner/BannerComp";
 import AboutComp from "../about/AboutComp";
 import CollectionComp from "../collection/CollectionComp";
 import RarityComp from "../rarity/RarityComp";
+import RoadmapComp from "../roadmap/RoadmapComp";
+import FAQComp from "../faq/FAQComp";
+import TeamComp from "../team/TeamComp";
+import ContactComp from "../contact/ContactComp";
 
 const MainLayout = () => {
   return (
@@ -19,6 +23,18 @@ const MainLayout = () => {
       </Row>
       <Row id="rarity">
         <RarityComp/>
+      </Row>
+      <Row id="roadmap">
+        <RoadmapComp/>
+      </Row>
+      <Row id="faq">
+        <FAQComp/>
+      </Row>
+      <Row id="team">
+        <TeamComp/>
+      </Row>
+      <Row id="contact">
+        <ContactComp/>
       </Row>
     </Container>
   );

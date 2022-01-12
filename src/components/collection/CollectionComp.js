@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import TitleComp from "../title/TitleComp";
 import {collectionData} from "../../configs/collectionData";
-import Border from '../../assets/imgs/collectionBg.png';
 
 import './CollectionComp.scss';
 
