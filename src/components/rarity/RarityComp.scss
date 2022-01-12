@@ -1,0 +1,107 @@
+@import "../../styles/rwd";
+
+.rarity-comp {
+  &-container {
+    min-height: 100%;
+  }
+}
+
+.rarity-comp-container .rarity-comp-content {
+  min-height: calc(100vh - 100px - 48px - 24px);
+  margin-top: 24px;
+
+  .rarity-item {
+    &:nth-child(odd) {
+      margin-top: 300px;
+    }
+
+    @include mobile {
+      min-height: 600px;
+      &:nth-child(odd) {
+        margin-top: unset;
+      }
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .item-container {
+    background-color: #77838d;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    min-height: 400px;
+    width: 300px;
+
+    .item-img {
+      position: relative;
+      width: 250px;
+      height: 125px;
+
+      img {
+        position: absolute;
+        width: 100%;
+        top: -125px;
+      }
+    }
+
+    .name-container {
+      margin-top: 24px;
+      height: 50px;
+
+      .name {
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+
+    .score-container {
+      height: 50px;
+
+      .score {
+        text-align: center;
+      }
+    }
+
+    .total-item {
+      .item, .label {
+        text-align: center;
+      }
+
+      .label {
+        font-weight: bold;
+      }
+
+      .item {
+        margin-top: 10px;
+      }
+    }
+
+    .rarity-container {
+      margin-top: 10px;
+
+      .label, .rarity {
+        text-align: center;
+      }
+
+      .rarity {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    }
+
+    @include tablet {
+      width: 200px;
+      .item-img {
+        width: 150px;
+        height: 75px;
+
+        img {
+          position: absolute;
+          width: 100%;
+          top: -75px;
+        }
+      }
+    }
+  }
+}

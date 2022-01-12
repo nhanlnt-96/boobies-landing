@@ -3,6 +3,7 @@ import {Container, Row} from "react-bootstrap";
 import BannerComp from "../banner/BannerComp";
 import AboutComp from "../about/AboutComp";
 import CollectionComp from "../collection/CollectionComp";
+import RarityComp from "../rarity/RarityComp";
 
 const MainLayout = () => {
   return (
@@ -15,6 +16,9 @@ const MainLayout = () => {
       </Row>
       <Row id="collection">
         <CollectionComp/>
+      </Row>
+      <Row id="rarity">
+        <RarityComp/>
       </Row>
     </Container>
   );

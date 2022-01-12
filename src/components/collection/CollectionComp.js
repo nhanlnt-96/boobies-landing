@@ -19,7 +19,7 @@ const CollectionComp = () => {
               {
                 collectionData.map((val, index) => (
                   index <= 2 && (
-                    <div className="img-container">
+                    <div data-aos="zoom-in" className="img-container">
                       <img key={index} src={val} alt="boobies-collection"/>
                     </div>
                   )
@@ -32,7 +32,7 @@ const CollectionComp = () => {
               {
                 collectionData.map((val, index) => (
                   index > 2 && (
-                    <div className="img-container">
+                    <div data-aos="zoom-in" className="img-container">
                       <img key={index} src={val} alt="boobies-collection"/>
                     </div>
                   )

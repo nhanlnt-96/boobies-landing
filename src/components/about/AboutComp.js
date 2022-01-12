@@ -14,7 +14,7 @@ const AboutComp = () => {
         </Row>
         <Row className="about-comp-content justify-content-center align-items-center">
           <Col ld={6} md={7} sm={12} className="about-comp-left">
-            <div className="about-content-container">
+            <div data-aos="zoom-in" className="about-content-container">
               <p className="content">We are creating an immersive metaverse experience, complete with role-playing games
                 where you will be able to use your NFT as in-game avatars, train your companion NFTS, and hang out with
                 your friends. Inspired by the majestic blue footed boobies, AdventureBoobies aspires to do more than
@@ -24,7 +24,7 @@ const AboutComp = () => {
             </div>
           </Col>
           <Col ld={6} md={5} sm={12} className="about-comp-right d-flex justify-content-center align-items-center">
-            <img src={AboutImg} alt="about-boobies"/>
+            <img data-aos="zoom-in" src={AboutImg} alt="about-boobies"/>
           </Col>
         </Row>
       </Container>
