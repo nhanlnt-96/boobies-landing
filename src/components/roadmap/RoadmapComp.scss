@@ -1,0 +1,15 @@
+.roadmap-comp {
+  padding-bottom: 0 !important;
+
+  &-content {
+    margin-top: 24px !important;
+    min-height: calc(100vh - 100px - 48px);
+  }
+}
+
+.roadmap-comp-container .roadmap-comp-content {
+  .content-container {
+    background: url("../../assets/imgs/bgRoadmap.png") no-repeat center;
+    background-size: contain;
+  }
+}
