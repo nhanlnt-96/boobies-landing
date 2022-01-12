@@ -1,0 +1,60 @@
+@import "../../styles/rwd";
+
+.contact-comp-content {
+  min-height: calc(100vh - 100px - 48px - 24px - 55px);
+  margin-top: 24px !important;
+}
+
+.contact-comp-content .contact-comp-left .contact-detail-container {
+  background-color: #77838d;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, .4) 5px 5px;
+  padding: 20px;
+
+  .title {
+    color: #000123;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .detail {
+    margin-top: 24px;
+    color: #ff0f7b;
+    font-weight: bold;
+    font-size: 26px;
+  }
+}
+
+.contact-comp-content .contact-comp-right img {
+  width: 100%;
+  @include mobile {
+    margin-top: 24px;
+  }
+}
+
+.contact-comp-footer .footer-container a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  border-radius: 100%;
+
+  svg {
+    font-size: 35px;
+  }
+
+  &:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  &:hover {
+    background-color: #77838d;
+
+    svg {
+      color: #ffffff;
+    }
+  }
+
+  @include mobile {
+    margin-top: 24px;
+  }
+}

@@ -7,6 +7,7 @@ import RarityComp from "../rarity/RarityComp";
 import RoadmapComp from "../roadmap/RoadmapComp";
 import FAQComp from "../faq/FAQComp";
 import TeamComp from "../team/TeamComp";
+import ContactComp from "../contact/ContactComp";
 
 const MainLayout = () => {
   return (
@@ -31,6 +32,9 @@ const MainLayout = () => {
       </Row>
       <Row id="team">
         <TeamComp/>
+      </Row>
+      <Row id="contact">
+        <ContactComp/>
       </Row>
     </Container>
   );
