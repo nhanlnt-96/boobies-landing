@@ -1,17 +1,16 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import AboutImg from '../../assets/imgs/bgAbout.png';
+import TitleComp from "../title/TitleComp";
 
 import './AboutComp.scss';
 
 const AboutComp = () => {
   return (
-    <Container fluid className="about-comp comp-height">
+    <Container fluid className="about-comp comp-height comp-secondary-bg">
       <Container className="about-comp-container">
         <Row className="about-comp-title d-flex justify-content-center align-items-center">
-          <div className="title-border d-flex justify-content-center align-items-center">
-            <h6 className="title">ABOUT</h6>
-          </div>
+          <TitleComp title={"ABOUT"}/>
         </Row>
         <Row className="about-comp-content justify-content-center align-items-center">
           <Col ld={6} md={7} sm={12} className="about-comp-left">

@@ -1,0 +1,52 @@
+@import "../../styles/rwd";
+
+.collection-comp {
+  background: url("../../assets/imgs/bgBanner.webp") no-repeat center;
+  background-size: 100% 100%;
+
+  &-img {
+    min-height: calc(100vh - 100px - 48px);
+  }
+}
+
+.collection-comp-container .collection-comp-img {
+  .top, .bottom {
+    width: 100%;
+
+    .top-container, .bottom-container {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+      }
+    }
+
+    .img-container {
+      img {
+        width: 100%;
+      }
+    }
+
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .top {
+    margin-top: 12px;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    @include mobile {
+      justify-content: center;
+    }
+  }
+}

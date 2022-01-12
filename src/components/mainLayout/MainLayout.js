@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import BannerComp from "../banner/BannerComp";
 import AboutComp from "../about/AboutComp";
+import CollectionComp from "../collection/CollectionComp";
 
 const MainLayout = () => {
   return (
@@ -11,6 +12,9 @@ const MainLayout = () => {
       </Row>
       <Row id="about">
         <AboutComp/>
+      </Row>
+      <Row id="collection">
+        <CollectionComp/>
       </Row>
     </Container>
   );

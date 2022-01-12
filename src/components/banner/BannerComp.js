@@ -118,7 +118,7 @@ const BannerComp = () => {
   }, [blockchain.account]);
   
   return (
-    <Container fluid className="banner-comp comp-height">
+    <Container fluid className="banner-comp comp-height comp-primary-bg">
       <HeaderComp/>
       <Container className="banner-comp-container d-flex flex-column justify-content-center align-items-center">
         <Row className="banner-comp-content">
