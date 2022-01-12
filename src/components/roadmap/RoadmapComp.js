@@ -1,9 +1,10 @@
 import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import TitleComp from "../title/TitleComp";
-import Arrow1 from '../../assets/imgs/roadmapArrow1.webp';
+import {Timeline, TimelineItem} from 'vertical-timeline-component-for-react';
 
 import './RoadmapComp.scss';
+import {roadmapData} from "../../configs/roadmapData";
 
 const RoadmapComp = () => {
   return (
@@ -13,14 +14,19 @@ const RoadmapComp = () => {
           <TitleComp title={"ROADMAP"}/>
         </Row>
         <Row className="roadmap-comp-content">
-          <div className="content-container">
-            <div className="content-item">
-              <div className="progress-container">
-                <img src={Arrow1} alt="roadmap-boobies"/>
-                
-              </div>
-            </div>
-          </div>
+          <Timeline lineColor={'#ddd'}>
+            {
+              roadmapData.map((val, index) => (
+                <TimelineItem
+                  key={index}
+                  dateText={val.title}
+                  style={{color: '#e86971'}}
+                >
+                  <p>{val.content}</p>
+                </TimelineItem>
+              ))
+            }
+          </Timeline>
         </Row>
       </Container>
     </Container>

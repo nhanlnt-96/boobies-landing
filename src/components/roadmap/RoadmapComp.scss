@@ -8,8 +8,40 @@
 }
 
 .roadmap-comp-container .roadmap-comp-content {
-  .content-container {
-    background: url("../../assets/imgs/bgRoadmap.png") no-repeat center;
-    background-size: contain;
+  .body-container {
+    padding: 10px;
+    background-color: rgba(119, 131, 141, .4);
+    border-radius: 10px;
+
+    p {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  .entry{
+    &:nth-child(1), &:nth-child(5) {
+      .timeline-item-dateinner {
+        background-color: #C1A6DB;
+      }
+    }
+
+    &:nth-child(2), &:nth-child(6) {
+      .timeline-item-dateinner {
+        background-color: #F6C3A4;
+      }
+    }
+
+    &:nth-child(3) {
+      .timeline-item-dateinner {
+        background-color: #EF907C;
+      }
+    }
+
+    &:nth-child(4) {
+      .timeline-item-dateinner {
+        background-color: #80C8C0;
+      }
+    }
   }
 }
