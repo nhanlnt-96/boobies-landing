@@ -10,13 +10,14 @@ import {
 } from "react-icons/all";
 import BannerImg from '../../assets/imgs/bannerImg.png';
 import HeaderComp from "../header/HeaderComp";
-
-import './BannerComp.scss';
+import {notification} from 'antd';
 import {useDispatch, useSelector} from "react-redux";
 import {fetchData} from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
 import {connect} from "../../redux/blockchain/blockchainActions";
 import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
+
+import './BannerComp.scss';
 
 const BannerComp = () => {
   const dispatch = useDispatch();
@@ -121,6 +122,13 @@ const BannerComp = () => {
     <Container fluid className="banner-comp comp-height comp-primary-bg">
       <HeaderComp/>
       <Container className="banner-comp-container d-flex flex-column justify-content-center align-items-center">
+        {
+          blockchain.errorMsg && notification.info({
+            message: `Error`,
+            description: blockchain.errorMsg,
+            placement: 'bottomRight',
+          })
+        }
         <Row className="banner-comp-content">
           <Col xl={7} lg={7} md={12} sm={12}
                className="banner-comp-left d-flex flex-column justify-content-xl-around align-items-center">

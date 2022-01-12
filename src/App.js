@@ -6,7 +6,7 @@ import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import MainLayout from "./components/mainLayout/MainLayout";
 
-// import 'antd/dist/antd.css';
+import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.scss';
 
